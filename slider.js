@@ -1,6 +1,6 @@
 const slider = document.querySelector('input[data-slider]');
 
-function v () {
+function colorSlider () {
   document.getElementById('i').innerText = this.value;
 // меняет цвет полосы
   const a = slider.value / 1.5;
@@ -8,7 +8,7 @@ function v () {
   slider.style.background = color;
 }
 
-slider.addEventListener('input', v);
+slider.addEventListener('input', colorSlider);
 
 
 // метод работает только с мышкой
