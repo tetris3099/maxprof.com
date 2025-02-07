@@ -12,12 +12,12 @@ const contact = [
 
 // FUNCTION
 function openCalculator () {
-  calculator[1].classList.toggle('demonstrate')
+  calculator[1].classList.toggle('not-demonstrate')
   document.body.classList.toggle('open')
 }
 
 function openContacts () {
-  contact[1].classList.toggle('open-contact')
+  contact[1].classList.toggle('is-hidden')
   document.body.classList.toggle('open')
 }
 
