@@ -25,10 +25,10 @@
           <span class="phone-butt-text">Замовити дзвінок</span>
         </button>
 
-        <a href="" class="logo"><span class="logo-m">M</span>ax<span class="logo-p">P</span>rof</a>
+        <button type="button" class="logo"><span class="logo-m">M</span>ax<span class="logo-p">P</span>rof</button>
         <!-- navigation -->
 
-        <div class="black-box">
+        <div class="black-box is-hidden">
           <div class="navigation ">
           
             <button type="button" class="close-menu"><svg width="37" height="37">
@@ -129,7 +129,7 @@
 
         <ul class="price-repair">
           <!-- CARDS 1 -->
-          <li class="items">
+          <li class="items" id="card-one">
             <div class="repair-box-top">
               <img src="./imeges/Ellipse 8 (1).png" alt="" class="repair-imeges" width="57" height="57">
               <div>
@@ -137,7 +137,9 @@
                 <p class="text">від 5 днів</p>
               </div>
             </div>
+
             <p class="repair-text">Такий тип ремонту підійде для того, щоб «освіжити» ремонт у квартирі: замінити покриття стін, підлоги та стелі без попередньої підготовки.</p>
+
             <div class="repair-box-bottom">
               <div class="box">
                 <p class="dismantling">Демонтаж</p>
@@ -145,39 +147,73 @@
                   <li class="item">
                     <svg width="13" height="13" class="icons">
                       <use href="./imeges/sprait.svg#check"></use>
-                  </svg><span>Демонтаж старих покриттів</span></li>
+                    </svg><span>Демонтаж старих покриттів</span>
+                  </li>
+
                   <li class="item">
                     <svg width="13" height="13" class="icons">
                       <use href="./imeges/sprait.svg#check"></use>
-                  </svg><span>Демонтаж старої електрики</span></li>
+                    </svg><span>Демонтаж старої електрики</span>
+                  </li>
                 </ul>
               </div>
+
               <div class="box">
                 <p class="dismantling">Чорнові роботи</p>
                 <ul class="list-repair">
                   <li class="item">
                     <svg width="13" height="13" class="icons">
                       <use href="./imeges/sprait.svg#check"></use>
-                  </svg><span>Грунтовка стін та підлоги</span></li>
+                    </svg><span>Грунтовка стін та підлоги</span>
+                  </li>
                 </ul>
               </div>
-              <div class="box">
-                <p class="flashing">Чистові роботи</p>
+
+              <div class="box card_box_mod">
+                <p class="flashing" id="title-one">Чистові роботи</p>
+                <ul class="list-repair dropdown" id="dropdown-list">
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                  </svg><span>Монтаж настінного покриття</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                  </svg><span>Укладання підлогових покриттів</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                  </svg><span>Встановлення дверей і вікон</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                  </svg><span>Встановлення сантехніки та електрики</span>
+                  </li>
+                </ul>
               </div>
-              <button class="list-but">Список робіт
-                <svg width="16" height="16" class="icon">
+              <button class="list-but" id="drop-down-one">Список робіт
+                <svg width="16" height="16" class="icon" id="icon-drop-off">
                   <use href="./imeges/sprait.svg#arrow-down"></use>
+                </svg>
+                <svg width="16" height="16" class="icon dropdown-mod" id="icon-drop-on">
+                  <use href="./imeges/sprait.svg#arrow-up"></use>
                 </svg>
               </button>
               <ul class="price-cards">
                 <li class="item"><p class="text">від <span class="text-number">1344</span> грн/м2</p></li>
                 <li class="item"><p class="text-discount">від <span class="text-number-discount">1015</span> грн/м2</p></li>
               </ul>
-              <button class="repair-but">Підсумкова ціна</button>
+              <button class="repair-but" id="butt-card-one">Підсумкова ціна</button>
             </div>
           </li>
           <!-- CARDS 2 -->
-          <li class="items">
+          <li class="items" id="card-two">
             <div class="repair-box-top">
               <img src="./imeges/Ellipse 8 (1).png" alt="" class="repair-imeges" width="57" height="57">
               <div>
@@ -217,26 +253,68 @@
                     </svg><span>Шпаклівка та штукатурка стін</span>
                   </li>
                   <li class="item">
-                    <svg width="13" height="13" class="flashing right-four">
+                    <svg width="13" height="13" class="flashing right-four" id="dim-icon-two">
                       <use href="./imeges/sprait.svg#check"></use>
-                    </svg><span class="flashing">Влаштування наливної підлоги</span>
+                    </svg><span class="flashing" id="dim-two">Влаштування наливної підлоги</span>
                   </li>
                 </ul>
               </div>
-              <button class="list-but">Список робіт
-                <svg width="16" height="16" class="icon">
+              <div class="box dropdown" id="dropdown-list-two">
+                <p class="dismantling">Чистові роботи</p>
+                <ul class="list-repair">
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Фарбування поверхонь</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Укладання плитки, клеєння шпалер та інше</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Укладання або настил покриття для підлоги</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Встановлення дверних та віконних отворів</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Встановлення вимикачів, розеток та зовнішніх елементів сантехнічних комунікацій</span>
+                  </li>
+                </ul>
+              </div>
+              <button class="list-but" id="drop-down-two">Список робіт
+                <svg width="16" height="16" class="icon" id="icon-drop-off-two">
                   <use href="./imeges/sprait.svg#arrow-down"></use>
+                </svg>
+                <svg width="16" height="16" class="icon dropdown-mod" id="icon-drop-on-two">
+                  <use href="./imeges/sprait.svg#arrow-up"></use>
                 </svg>
               </button>
               <ul class="price-cards">
                 <li class="item"><p class="text">від <span class="text-number">1344</span> грн/м2</p></li>
                 <li class="item"><p class="text-discount">від <span class="text-number-discount">1015</span> грн/м2</p></li>
               </ul>
-              <button class="repair-but">Підсумкова ціна</button>
+              <button class="repair-but" id="butt-card-two">Підсумкова ціна</button>
             </div>
           </li>
           <!-- CARDS 3 -->
-          <li class="items">
+          <li class="items" id="card-three">
             <div class="repair-box-top">
               <img src="./imeges/Ellipse 8 (1).png" alt="" class="repair-imeges" width="57" height="57">
               <div>
@@ -276,26 +354,75 @@
                     </svg><span>Грунтовка стін та підлоги</span>
                   </li>
                   <li class="item">
-                    <svg width="13" height="13" class="flashing right-four">
+                    <svg width="13" height="13" class="flashing right-four" id="dim-icon-three">
                       <use href="./imeges/sprait.svg#check"></use>
-                    </svg><span class="flashing">Шпаклівка та штукатурка стін</span>
+                    </svg><span class="flashing" id="dim-three">Шпаклівка та штукатурка стін</span>
+                  </li>
+
+                  <li class="item dropdown" id="repeir-string-three">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg><span>Влаштування наливної підлоги</span>
                   </li>
                 </ul>
               </div>
-              <button class="list-but">Список робіт
-                <svg width="16" height="16" class="icon">
+              <div class="box dropdown" id="dropdown-list-three">
+                <p class="dismantling">Чистові роботи</p>
+                <ul class="list-repair">
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Чистове оздоблення стін</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Чистове оздоблення підлоги</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Чистове оздоблення стелі</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Монтаж чистових розеток і вимикачів</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span>Встановлення дверей та світильників</span>
+                  </li>
+
+                </ul>
+              </div>
+              <button class="list-but" id="drop-down-three">Список робіт
+                <svg width="16" height="16" class="icon" id="icon-drop-off-three">
                   <use href="./imeges/sprait.svg#arrow-down"></use>
+                </svg>
+                <svg width="16" height="16" class="icon dropdown-mod" id="icon-drop-on-three">
+                  <use href="./imeges/sprait.svg#arrow-up"></use>
                 </svg>
               </button>
               <ul class="price-cards">
                 <li class="item"><p class="text">від <span class="text-number">1344</span> грн/м2</p></li>
                 <li class="item"><p class="text-discount">від <span class="text-number-discount">1015</span> грн/м2</p></li>
               </ul>
-              <button class="repair-but">Підсумкова ціна</button>
+              <button class="repair-but" id="butt-card-three">Підсумкова ціна</button>
             </div>
           </li>
           <!-- CARDS 4 -->
-          <li class="items">
+          <li class="items" id="card-four">
             <div class="repair-box-top">
               <img src="./imeges/Ellipse 8 (1).png" alt="" class="repair-imeges" width="57" height="57">
               <div>
@@ -335,22 +462,70 @@
                     </svg><span>Грунтовка стін та підлоги</span>
                   </li>
                   <li class="item">
-                    <svg width="13" height="13" class="flashing right-four">
+                    <svg width="13" height="13" class="flashing right-four" id="dim-icon-four">
                       <use href="./imeges/sprait.svg#check"></use>
-                    </svg><span class="flashing">Шпаклівка та штукатурка стін</span>
+                    </svg><span class="flashing" id="dim-four">Шпаклівка та штукатурка стін</span>
+                  </li>
+                  <li class="item dropdown" id="repeir-string-four">
+                    <svg width="13" height="13" class="icons">
+                      <use href="./imeges/sprait.svg#check"></use>
+                    </svg><span>Влаштування наливної підлоги</span>
                   </li>
                 </ul>
               </div>
-              <button class="list-but">Список робіт
-                <svg width="16" height="16" class="icon">
+
+              <div class="box dropdown" id="dropdown-list-four">
+                <p class="dismantling">Чистові роботи</p>
+                <ul class="list-repair">
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                     <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span class="text">Монтаж корпусних меблів</span>
+                  </li>
+                  
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                     <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span class="text">Встановлення дверей</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                     <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span class="text">Монтаж плінтусів</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                     <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span class="text">Установка решти меблів</span>
+                  </li>
+
+                  <li class="item">
+                    <svg width="13" height="13" class="icons">
+                     <use href="./imeges/sprait.svg#check"></use>
+                    </svg>
+                    <span class="text">Декорування квартири</span>
+                  </li>
+                </ul>
+              </div>
+              <button class="list-but" id="drop-down-four">Список робіт
+                <svg width="16" height="16" class="icon" id="icon-drop-off-four">
                   <use href="./imeges/sprait.svg#arrow-down"></use>
+                </svg>
+                <svg width="16" height="16" class="icon dropdown-mod" id="icon-drop-on-four">
+                  <use href="./imeges/sprait.svg#arrow-up"></use>
                 </svg>
               </button>
               <ul class="price-cards">
                 <li class="item"><p class="text">від <span class="text-number">1344</span> грн/м2</p></li>
                 <li class="item"><p class="text-discount">від <span class="text-number-discount">1015</span> грн/м2</p></li>
               </ul>
-              <button class="repair-but">Підсумкова ціна</button>
+              <button class="repair-but" id="butt-card-four">Підсумкова ціна</button>
             </div>
           </li>
         </ul>
@@ -359,7 +534,7 @@
         <!-- RADIO -->
         <form action="" class="form-box">
           <label class="radio-box">
-            <input type="radio" class="radio all-radio check" name="cards" value="card" id="card-one">
+            <input type="radio" class="radio all-radio check" name="cards" value="card" id="card-radio-one">
             <span class="radio-icon-box">
               <svg width="18" height="18" class="radio-icon-click">
                 <use href="./imeges/sprait.svg#radio-click"></use>
@@ -371,7 +546,7 @@
           </label>
 
           <label class="radio-box">
-            <input type="radio" class="radio all-radio" name="cards" value="card" id="card-two">
+            <input type="radio" class="radio all-radio" name="cards" value="card" id="card-radio-two">
             <span class="radio-icon-box">
               <svg width="18" height="18" class="radio-icon-click">
                 <use href="./imeges/sprait.svg#radio-click"></use>
@@ -383,7 +558,7 @@
           </label>
 
           <label class="radio-box">
-            <input type="radio" class="radio all-radio" name="cards" value="card" id="card-three">
+            <input type="radio" class="radio all-radio" name="cards" value="card" id="card-radio-three">
             <span class="radio-icon-box">
               <svg width="18" height="18" class="radio-icon-click">
                 <use href="./imeges/sprait.svg#radio-click"></use>
@@ -395,7 +570,7 @@
           </label>
 
           <label class="radio-box">
-            <input type="radio" class="radio all-radio" name="cards" value="card" id="card-four">
+            <input type="radio" class="radio all-radio" name="cards" value="card" id="card-radio-four">
             <span class="radio-icon-box">
               <svg width="18" height="18" class="radio-icon-click">
                 <use href="./imeges/sprait.svg#radio-click"></use>
@@ -423,8 +598,8 @@
         </ul>
 
         <form class="radio-portfolio-box">
-          <label class="item">
-            <input type="radio" name="portfolio-m2" class="portfolio-radio">
+          <label class="item apartament-one">
+            <input type="radio" name="portfolio-m2" class="portfolio-radio" checked>
             <span class="input-box">
               <svg width="20" height="20" class="radio-port">
                 <use href="./imeges/sprait.svg#radio"></use>
@@ -436,7 +611,7 @@
             </span>
           </label>
 
-          <label class="item">
+          <label class="item apartament-two">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
             <span class="input-box">
               <svg width="20" height="20" class="radio-port">
@@ -449,7 +624,7 @@
             </span>
           </label>
 
-          <label class="item">
+          <label class="item apartament-three">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
             <span class="input-box">
               <svg width="20" height="20" class="radio-port">
@@ -458,11 +633,11 @@
               <svg width="20" height="20" class="radio-click-port">
                 <use href="./imeges/sprait.svg#radio-click"></use>
               </svg>
-              <span class="text-input">72 м2</span>
+              <span class="text-input">100 м2</span>
             </span>
           </label>
 
-          <label class="item">
+          <label class="item apartament-four">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
             <span class="input-box">
               <svg width="20" height="20" class="radio-port">
@@ -471,11 +646,11 @@
               <svg width="20" height="20" class="radio-click-port">
                 <use href="./imeges/sprait.svg#radio-click"></use>
               </svg>
-              <span class="text-input">88 м2</span>
+              <span class="text-input">45 м2</span>
             </span>
           </label>
 
-          <label class="item">
+          <label class="item apartament-five">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
             <span class="input-box">
               <svg width="20" height="20" class="radio-port">
@@ -488,7 +663,7 @@
             </span>
           </label>
 
-          <label class="item">
+          <label class="item apartament-six">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
             <span class="input-box">
               <svg width="20" height="20" class="radio-port">
@@ -501,7 +676,7 @@
             </span>
           </label>
 
-          <label class="item">
+          <label class="item apartament-seven">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
             <span class="input-box">
               <svg width="20" height="20" class="radio-port">
@@ -514,15 +689,95 @@
             </span>
           </label>
         </form>
-      </div>
 
-      <div>
-        <ul>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
+        <ul class="grid__conteiner">
+          <li class="item" id="el-grid-one">
+            <img src="./imeges/apartamentOne/1.jpg" alt="" class="imeges-grid" id="grid-imege-one">
+          </li>
+
+          <li class="item" id="el-grid-two">
+            <img src="./imeges/apartamentOne/2.jpg" alt="" class="imeges-grid" id="grid-imege-two">
+          </li>
+
+          <li class="item" id="el-grid-three">
+            <img src="./imeges/apartamentOne/3.jpg" alt="" class="imeges-grid" id="grid-imege-three">
+          </li>
+
+          <li class="item" id="el-grid-four">
+            <img src="./imeges/apartamentOne/4.jpg" alt="" class="imeges-grid" id="grid-imege-four">
+          </li>
+
+          <li class="item icon__accent" id="el-grid-five">
+            <img src="./imeges/apartamentOne/5.jpg" alt="" class="imeges-grid" id="grid-imege-five">
+          </li>
         </ul>
+
+        <div class="infobox">
+          <ul class="infobox-list">
+            <li class="item">
+              <svg width="17" height="17">
+                <use href="./imeges/sprait.svg#dollar-sign"></use>
+              </svg>
+              <span class="text">Ціна:</span><span></span>
+            </li>
+
+            <li class="item">
+              <svg width="17" height="17">
+                <use href="./imeges/sprait.svg#grid"></use>
+              </svg>
+              <span class="text">Площа:</span>
+            </li>
+
+            <li class="item">
+              <svg width="17" height="17">
+                <use href="./imeges/sprait.svg#calendar"></use>
+              </svg>
+              <span class="text">Термін:</span>
+            </li>
+
+            <li class="item">
+              <svg width="17" height="17">
+                <use href="./imeges/sprait.svg#home"></use>
+              </svg>
+              <span class="text">Кімнат:</span>
+            </li>
+
+            <li class="item">
+              <svg width="17" height="17">
+                <use href="./imeges/sprait.svg#map-pin"></use>
+              </svg>
+              <span class="text">Адреса:</span>
+            </li>
+
+            <li class="item">
+              <svg width="17" height="17">
+                <use href="./imeges/sprait.svg#file-text"></use>
+              </svg>
+              <span class="text">Перелік робіт:</span>
+            </li>
+          </ul>
+
+          <ul class="list-details">
+            <li class="item"><span class="text" id="portfolio-price">100 250 грн.</span></li>
+            <li class="item"><span class="text" id="portfolio-square">43 м2</span></li>
+            <li class="item"><span class="text" id="portfolio-term">90 днів</span></li>
+            <li class="item"><span class="text" id="portfolio-rooms">2</span></li>
+            <li class="item"><span class="text" id="portfolio-address">Лісова 17</span></li>
+          </ul>
+
+          <ul class="text-list">
+            <li class="item"><p class="text">Штукатурка стін по маякам</p></li>
+            <li class="item"><p class="text">Грунтовка стін та стелі</p></li>
+            <li class="item"><p class="text">Монтаж натяжних стель</p></li>
+            <li class="item"><p class="text">Шпаклівка стін під шпалери</p></li>
+            <li class="item"><p class="text">Забарвлення стін</p></li>
+            <li class="item"><p class="text">Укладання плитки в с/в</p></li>
+            <li class="item"><p class="text">Прокладка електрики</p></li>
+            <li class="item"><p class="text">Установка плінтусів та укосів</p></li>
+          </ul>
+        </div>
+
+        <button class="grid-butt">Залишити заявку</button>
       </div>
     </section>
   </main>
@@ -531,7 +786,7 @@
 
 
   <!-- MODAL -->
-  <div class="modal-calc">
+  <div class="modal-calc not-demonstrate">
     <div class="window-calc">
       <button class="window-closed">
         <svg width="21" height="21" class="icon">
@@ -710,7 +965,7 @@
   </div>
 
   <!-- MODAL CONTACTS -->
-  <div class="black-box-contacts">
+  <div class="black-box-contacts is-hidden">
     <div class="modal-contacts">
       <button type="button" class="modal-closed">X</button>
 
@@ -794,13 +1049,11 @@
     </div>
   </div>
 
-  <div>
-    <button class="to-top no">top</button>
-  </div>
-
   <script src="./menu.js"></script>
   <script src="./modal.js"></script>
   <script src="./slider.js"></script>
   <script src="./scrol.js"></script>
+  <script src="./drop-down.js"></script>
+  <script src="./grid.js"></script>
 </body>
 </html>
