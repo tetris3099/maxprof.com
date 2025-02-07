@@ -1,14 +1,30 @@
-const menuBut = document.querySelector('.mobile-menu');
-const blackBox = document.querySelector('.black-box');
-const closed = document.querySelector('.close-menu');
+const menu = {
+  menuBut: document.querySelector('.mobile-menu'),
+  blackBox: document.querySelector('.black-box'),
+  closed: document.querySelector('.close-menu'),
+  open () {
+    this.menuBut.addEventListener('click', () => {
+      this.blackBox.classList.remove('is-hidden')
+      document.body.classList.add('open')
+    })
+  },
+  close () {
+    this.closed.addEventListener('click', () => {
+      this.blackBox.classList.add('is-hidden')
+      document.body.classList.remove('open')
+    })
 
-function openMenu () {
-  blackBox.classList.toggle('is-open');
-  document.body.classList.toggle('open')
-}
+    this.blackBox.addEventListener('click', () => {
+      this.blackBox.classList.add('is-hidden')
+      document.body.classList.remove('open')
+    })
+  },
+};
 
-menuBut.addEventListener('click', openMenu);
-closed.addEventListener('click', openMenu);
+menu.open();
+menu.close();
 
-
-
+// TO TOP
+const b = document.querySelector('.logo').addEventListener('click', function name() {
+  window.scrollTo(0, 0)
+});
