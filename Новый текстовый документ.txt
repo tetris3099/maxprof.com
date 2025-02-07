@@ -1,7 +1,0 @@
-if(res === 0 || res < 115) {
-    document.getElementById('card-one').classList.add('check');
-    document.getElementById('card-two').classList.remove('check');
-  } else if(res > 115 || res < 400) {
-    document.getElementById('card-one').classList.remove('check');
-    document.getElementById('card-two').classList.add('check');
-  }
