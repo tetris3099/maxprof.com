@@ -86,7 +86,7 @@
 
         <ul class="list-hero">
           <li class="items">
-            <div class="box-hero-icons ellipse-one">
+            <div class="box-icons hero__box-icons hero__ellipse-one">
               <svg width="60" height="60">
                 <use href="./imeges/sprait.svg#handshake"></use>
               </svg>
@@ -94,7 +94,7 @@
             <p class="hero-text">Розрахунок по факту приймання роботи</p>
           </li>
           <li class="items">
-            <div class="box-hero-icons ellipse-two">
+            <div class="box-icons hero__box-icons hero__ellipse-two">
               <svg width="60" height="60">
                 <use href="./imeges/sprait.svg#note"></use>
               </svg>
@@ -102,7 +102,7 @@
             <p class="hero-text">Заміри та підрахунок бюджету БЕЗКОШТОВНО</p>
           </li>
           <li class="items">
-            <div class="box-hero-icons ellipse-three">
+            <div class="box-icons hero__box-icons hero__ellipse-three">
               <svg width="60" height="60">
                 <use href="./imeges/sprait.svg#worker"></use>
               </svg>
@@ -110,7 +110,7 @@
             <p class="hero-text">Виїзд майстра</p>
           </li>
           <li class="items">
-            <div class="box-hero-icons ellipse-four">
+            <div class="box-icons hero__box-icons hero__ellipse-four">
               <svg width="60" height="60">
                 <use href="./imeges/sprait.svg#guarantee"></use>
               </svg>
@@ -600,7 +600,7 @@
         <form class="radio-portfolio-box">
           <label class="item apartament-one">
             <input type="radio" name="portfolio-m2" class="portfolio-radio" checked>
-            <span class="input-box">
+            <span class="radio-icon-box">
               <svg width="20" height="20" class="radio-port">
                 <use href="./imeges/sprait.svg#radio"></use>
               </svg>
@@ -613,7 +613,7 @@
 
           <label class="item apartament-two">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
-            <span class="input-box">
+            <span class="radio-icon-box">
               <svg width="20" height="20" class="radio-port">
                 <use href="./imeges/sprait.svg#radio"></use>
               </svg>
@@ -626,7 +626,7 @@
 
           <label class="item apartament-three">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
-            <span class="input-box">
+            <span class="radio-icon-box">
               <svg width="20" height="20" class="radio-port">
                 <use href="./imeges/sprait.svg#radio"></use>
               </svg>
@@ -639,7 +639,7 @@
 
           <label class="item apartament-four">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
-            <span class="input-box">
+            <span class="radio-icon-box">
               <svg width="20" height="20" class="radio-port">
                 <use href="./imeges/sprait.svg#radio"></use>
               </svg>
@@ -652,7 +652,7 @@
 
           <label class="item apartament-five">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
-            <span class="input-box">
+            <span class="radio-icon-box">
               <svg width="20" height="20" class="radio-port">
                 <use href="./imeges/sprait.svg#radio"></use>
               </svg>
@@ -665,7 +665,7 @@
 
           <label class="item apartament-six">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
-            <span class="input-box">
+            <span class="radio-icon-box">
               <svg width="20" height="20" class="radio-port">
                 <use href="./imeges/sprait.svg#radio"></use>
               </svg>
@@ -678,7 +678,7 @@
 
           <label class="item apartament-seven">
             <input type="radio" name="portfolio-m2" class="portfolio-radio">
-            <span class="input-box">
+            <span class="radio-icon-box">
               <svg width="20" height="20" class="radio-port">
                 <use href="./imeges/sprait.svg#radio"></use>
               </svg>
@@ -780,8 +780,217 @@
         <button class="grid-butt">Залишити заявку</button>
       </div>
     </section>
-  </main>
+    <!-- Discount -->
+    <section class="discount">
+      <div class="conteiner">
+        <h2 class="discount-title">Акції</h2>
+        <ul class="discount-carousel">
+          <li class="item new-settlers">
+            <div class="position-box">
+              <h3 class="carousel-title">Новоселам</h3>
+              <p class="text">Спеціальна знижка для тих, хто переїхав не більше року тому</p>
+              <button type="button" class="carousel-butt">Отримати знижку</button>
+            </div>
+          </li>
+          <li class="item newlyweds">
+            <div class="position-box">
+              <h3 class="carousel-title">Молодятам</h3>
+              <p class="text">Спеціальна знижка якщо з моменту реєстрації минуло не більше року</p>
+              <button type="button" class="carousel-butt">Отримати знижку</button>
+            </div>
+          </li>
+          <li class="item pensioners">
+            <div class="position-box">
+              <h3 class="carousel-title">Пенсіонерам</h3>
+              <p class="text">Спеціальна знижка для наших дорогих</p>
+              <button type="button" class="carousel-butt">Отримати знижку</button>
+            </div>
+          </li>
+        </ul>
 
+        <form action="" class="form-box">
+          <label class="radio-box">
+            <input type="radio" class="radio all-radio check" name="cards-discount" value="card" id="discount-one">
+            <span class="radio-icon-box">
+              <svg width="18" height="18" class="radio-icon-click">
+                <use href="./imeges/sprait.svg#radio-click"></use>
+              </svg>
+              <svg width="18" height="18" class="radio-icon">
+                <use href="./imeges/sprait.svg#radio"></use>
+              </svg>
+            </span>
+          </label>
+  
+          <label class="radio-box">
+            <input type="radio" class="radio all-radio" name="cards-discount" value="card" id="discount-two">
+            <span class="radio-icon-box">
+              <svg width="18" height="18" class="radio-icon-click">
+                <use href="./imeges/sprait.svg#radio-click"></use>
+              </svg>
+              <svg width="18" height="18" class="radio-icon">
+                <use href="./imeges/sprait.svg#radio"></use>
+              </svg>
+            </span>
+          </label>
+  
+          <label class="radio-box">
+            <input type="radio" class="radio all-radio" name="cards-discount" value="card" id="discount-three">
+            <span class="radio-icon-box">
+              <svg width="18" height="18" class="radio-icon-click">
+                <use href="./imeges/sprait.svg#radio-click"></use>
+              </svg>
+              <svg width="18" height="18" class="radio-icon">
+                <use href="./imeges/sprait.svg#radio"></use>
+              </svg>
+            </span>
+          </label>
+        </form>
+
+        <button type="button" class="discount-butt">Всі акції</button>
+      </div>
+    </section>
+    <!-- WORK PROCESS -->
+    <section class="work-process">
+      <div class="conteiner">
+        <h2 class="work-title">Як ми працюємо</h2>
+        <p class="text">Вам зрозумілий кожен етап: фіксований термін 
+          та ціни, надаємо всі документи: 
+          накладні, гарантії, акти. 
+          Ви будете впевнені у результаті.</p>
+          <ul class="list-work">
+            <li class="item">
+              <div class="box-icons work__box-icons work__ellipse-one">
+                <svg width="46" height="46">
+                  <use href="./imeges/sprait.svg#worker"></use>
+                </svg>
+              </div>
+              <span class="work-text">Безкоштовний виїзд фахівця із замірів</span>
+            </li>
+
+            <li class="item">
+              <div class="box-icons work__box-icons work__ellipse-two">
+                <svg width="46" height="46">
+                  <use href="./imeges/sprait.svg#note"></use>
+                </svg>
+              </div>
+              <span class="work-text">Кошторис у день звернення</span>
+            </li>
+
+            <li class="item">
+              <div class="box-icons work__box-icons work__ellipse-three">
+                <svg width="46" height="46">
+                  <use href="./imeges/sprait.svg#agreement"></use>
+                </svg>
+              </div>
+              <span class="work-text">Договір</span>
+            </li>
+
+            <li class="item">
+              <div class="box-icons work__box-icons work__ellipse-four">
+                <svg width="46" height="46">
+                  <use href="./imeges/sprait.svg#listOfWorks"></use>
+                </svg>
+              </div>
+              <span class="work-text">Накладні матеріали</span>
+            </li>
+
+            <li class="item">
+              <div class="box-icons work__box-icons work__ellipse-five">
+                <svg width="46" height="46">
+                  <use href="./imeges/sprait.svg#control"></use>
+                </svg>
+              </div>
+              <span class="work-text">Контроль: фотозвіт або відеоспостереження</span>
+            </li>
+
+            <li class="item">
+              <div class="box-icons work__box-icons work__ellipse-six">
+                <svg width="46" height="46">
+                  <use href="./imeges/sprait.svg#listAndPen"></use>
+                </svg>
+              </div>
+              <span class="work-text">Акт виконаних робіт</span>
+            </li>
+
+            <li class="item">
+              <div class="box-icons work__box-icons work__ellipse-seven">
+                <svg width="46" height="46">
+                  <use href="./imeges/sprait.svg#handshake"></use>
+                </svg>
+              </div>
+              <span class="work-text">Акт приймання робіт за договором</span>
+            </li>
+
+            <li class="item">
+              <div class="box-icons work__box-icons work__ellipse-eight">
+                <svg width="46" height="46">
+                  <use href="./imeges/sprait.svg#guarantee"></use>
+                </svg>
+              </div>
+              <span class="work-text">Гарантія на виконані роботи</span>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <section class="our-warehouse">
+      <div class="conteiner">
+        <h2 class="our-warehouse__title">Свій склад та шоурум матеріалів наших партнерів у КИЄВІ</h2>
+
+        <ul class="our-warehouse__list">
+          <li class="item">
+            <div class="box-icons our-warehouse__box-icons our-warehouse__ellipse-one">
+              <svg width="30" height="30">
+                <use href="./imeges/sprait.svg#agreement"></use>
+              </svg>
+            </div>
+            <span class="work-text">Прямий договір із постачальниками</span>
+          </li>
+
+          <li class="item">
+            <div class="box-icons our-warehouse__box-icons our-warehouse__ellipse-two">
+              <svg width="30" height="30">
+                <use href="./imeges/sprait.svg#delivery"></use>
+              </svg>
+            </div>
+            <span class="work-text">Доставка та підйом у квартиру</span>
+          </li>
+
+          <li class="item">
+            <div class="box-icons our-warehouse__box-icons our-warehouse__ellipse-three">
+              <svg width="30" height="30">
+                <use href="./imeges/sprait.svg#materials"></use>
+              </svg>
+            </div>
+            <span class="work-text">300 тонн чорнових та чистових матеріалів</span>
+          </li>
+
+          <li class="item">
+            <div class="box-icons our-warehouse__box-icons our-warehouse__ellipse-four">
+              <svg width="30" height="30">
+                <use href="./imeges/sprait.svg#catalog"></use>
+              </svg>
+            </div>
+            <span class="work-text">Виїзд спеціаліста з каталогом матеріалів</span>
+          </li>
+
+          <li class="item">
+            <div class="box-icons our-warehouse__box-icons our-warehouse__ellipse-five">
+              <svg width="30" height="30">
+                <use href="./imeges/sprait.svg#wallpaper"></use>
+              </svg>
+            </div>
+            <span class="work-text">250 видов обоев <br> 25 видов ламината <br> 50 видов плитки и плинтуса</span>
+          </li>
+        </ul>
+
+        <div class="waerhouse__images-box">
+          <img src="./imeges/mobile/texture-sample@1x.jpg" alt="" class="waerhouse__images">
+          <img src="./imeges/mobile/pil- textile@1x.jpg" alt="" class="waerhouse__images">
+        </div>
+      </div>
+    </section>
+  </main>
 
 
 
@@ -950,7 +1159,7 @@
         </fieldset>
       </form>
 
-      <div class="discount">
+      <div class="discount-modal-box">
         <p class="discount-modal">Термін ремонту: <br><span class="text">до 34 днів</span></p>
         <p class="discount-modal">Скидка составит:<br><span class="text">19 500 грн</span></p>
       </div>
