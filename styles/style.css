@@ -885,6 +885,7 @@ nav {
   font-size: 36px;
   text-align: center;
   margin: 0;
+  margin-bottom: 25px;
   color: var(--text-color);
 }
 
