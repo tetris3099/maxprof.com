@@ -16,23 +16,31 @@ const discountRadio = {
  radioThree: document.getElementById('discount-three'),
 }
 
-
 // Function
 const clickScrol = (element, cardConteiner, x) => {
+  const BoxWidth = cardConteiner.scrollWidth - cardConteiner.clientWidth;
+  const res = (x * BoxWidth) / 100;
+
   element.addEventListener('click', function name() {
-    cardConteiner.scrollTo(x, 0)})
+  cardConteiner.scrollTo(res, 0)})
 };
 
 clickScrol(cardRadio.radioOne, cardBox, 0);
-clickScrol(cardRadio.radioTwo, cardBox, 320);
-clickScrol(cardRadio.radioThree, cardBox, 620);
-clickScrol(cardRadio.radioFour, cardBox, 1000);
+clickScrol(cardRadio.radioTwo, cardBox, 36);
+clickScrol(cardRadio.radioThree, cardBox, 71);
+clickScrol(cardRadio.radioFour, cardBox, 100);
 
 clickScrol(discountRadio.radioOne, discountBox, 0);
-clickScrol(discountRadio.radioTwo, discountBox, 381);
-clickScrol(discountRadio.radioThree, discountBox, 762);
+clickScrol(discountRadio.radioTwo, discountBox, 50);
+clickScrol(discountRadio.radioThree, discountBox, 100);
 
+// discountRadio.radioTwo.addEventListener('click', () => {
+//   const BoxWidth = discountBox.scrollWidth - discountBox.clientWidth;
+  
+//   const procent = (50 * BoxWidth) / 100;
 
+//   discountBox.scrollTo(procent, 0);
+// });
 
 
 const radioIconManagement = ({cartConteiner, object, numbers} =settingObject) => {
@@ -72,7 +80,6 @@ const radioIconManagement = ({cartConteiner, object, numbers} =settingObject) =>
     };
 
     function fourRadio ({radioOne, radioTwo, radioThree, radioFour} = object)  {
-      console.log(object);
       if(res > numbers[0] && res < numbers[1]) {
         radioOne.classList.add('check');
         radioTwo.classList.remove('check');
@@ -170,3 +177,21 @@ clickButt(butCards.buttOne);
 clickButt(butCards.buttTwo);
 clickButt(butCards.buttThree);
 clickButt(butCards.buttFour);
+
+
+// TO TOP
+const toTopButt = document.querySelector('.to-top');
+
+const hide = () => {
+  if (window.scrollY > 1000) {
+    toTopButt.classList.remove('is-hidden')
+  } else if (window.scrollY < 1000) {
+    toTopButt.classList.add('is-hidden')
+  }
+};
+
+window.addEventListener('scroll', hide);
+
+toTopButt.addEventListener('click', function name() {
+  window.scrollTo(0, 0)
+});
