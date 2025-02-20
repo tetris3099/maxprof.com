@@ -25,16 +25,16 @@
           <span class="phone-butt-text">Замовити дзвінок</span>
         </button>
 
-        <button type="button" class="logo"><span class="logo-m">M</span>ax<span class="logo-p">P</span>rof</button>
+        <a href="./index.html" class="logo"><span class="logo-m">M</span>ax<span class="logo-p">P</span>rof</a>
         <!-- navigation -->
 
         <div class="black-box is-hidden">
           <div class="navigation ">
-          
+
             <button type="button" class="close-menu"><svg width="37" height="37">
               <use href="./imeges/sprait.svg#closed-m-menu"></use>
             </svg></button>
-            
+
             <div class="box">
               <ul class="list-link">
                 <li class="item"><a href="" class="link-mod">Ціни</a></li>
@@ -984,10 +984,10 @@
           </li>
         </ul>
 
-        <div class="waerhouse__images-box">
-          <img src="./imeges/mobile/texture-sample@1x.jpg" alt="" class="waerhouse__images">
-          <img src="./imeges/mobile/pil- textile@1x.jpg" alt="" class="waerhouse__images">
-        </div>
+        <ul class="waerhouse__images-box">
+          <li class="waerhouse__images waerhouse__images--one"></li>
+          <li class="waerhouse__images waerhouse__images--two"></li>
+        </ul>
       </div>
     </section>
   </main>
@@ -1152,7 +1152,7 @@
         <!-- GROOP 4 -->
         <fieldset class="radio-box-modal">
           <legend class="line">Площа м2</legend>
-          <label>
+          <label class="line--slider">
             <input type="range" min="0" max="150" step="1" value="0" class="slider" data-slider>
             <span id="i">0</span>
           </label>
@@ -1256,6 +1256,15 @@
         </ul>
       </div>
     </div>
+  </div>
+
+  <!-- TO TOP -->
+  <div>
+    <button class="to-top is-hidden">
+      <svg width="50" height="50" class="to-top__icon">
+        <use href="./imeges/sprait.svg#arrow-up"></use>
+      </svg>
+    </button>
   </div>
 
   <script src="./menu.js"></script>
