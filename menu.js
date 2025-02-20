@@ -23,8 +23,3 @@ const menu = {
 
 menu.open();
 menu.close();
-
-// TO TOP
-const b = document.querySelector('.logo').addEventListener('click', function name() {
-  window.scrollTo(0, 0)
-});
