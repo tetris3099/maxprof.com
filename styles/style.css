@@ -3209,22 +3209,6 @@ address {
   }
 }
 
-.type-divice {
-  position: fixed;
-  bottom: 25px;
-  left: 5px;
-  color: #52971f;
-  background-color: #000;
-}
-
-.coordin {
-  color: #52971f;
-  background-color: #000;
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
-}
-
 .modal-calc.not-demonstrate {
   opacity: 0;
   visibility: hidden;
