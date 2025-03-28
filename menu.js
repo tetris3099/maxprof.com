@@ -28,9 +28,6 @@ const navigationButt = document.querySelectorAll('.link-mod');
 
 let scrollNumber = 0;
 const widthDisplay = document.documentElement.clientWidth;
-const heightDisplay = document.documentElement.clientHeight;
-
-document.querySelector('.coordin').textContent = `Прокрутка: ${scrollNumber}`;
 
 navigationButt.forEach((butt) => {
   butt.addEventListener('click', () => {
@@ -55,10 +52,7 @@ navigationButt.forEach((butt) => {
     if (widthDisplay < 768) {
       scrollNumber -= 66;
     }
-    document.querySelector('.coordin').textContent = `Прокрутка: ${scrollNumber}`;
     window.scrollTo(0, scrollNumber);
     return scrollNumber;
   })
 });
-
-document.querySelector('.type-divice').textContent = `Щирина экрана: ${widthDisplay} и высота ${heightDisplay}`
